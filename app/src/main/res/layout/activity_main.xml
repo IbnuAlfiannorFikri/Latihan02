@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btRealmadrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="42dp"
+        android:text="@string/real_madrid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btBarcelona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="@string/bercelona"
+        app:layout_constraintStart_toStartOf="@+id/btRealmadrid"
+        app:layout_constraintTop_toBottomOf="@+id/btRealmadrid" />
+
+    <Button
+        android:id="@+id/btLancester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="@string/lencester"
+        app:layout_constraintStart_toStartOf="@+id/btBarcelona"
+        app:layout_constraintTop_toBottomOf="@+id/btBarcelona" />
+
+    <Button
+        android:id="@+id/btFlorentina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/florentina"
+        app:layout_constraintStart_toStartOf="@+id/btLancester"
+        app:layout_constraintTop_toBottomOf="@+id/btLancester" />
+</androidx.constraintlayout.widget.ConstraintLayout>
